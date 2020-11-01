@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Logo from "./components/Logo";
+import BestPokemon from "./components/BestPokemon";
+import CaughtPokemon from "./components/CaughtPokemon";
+import DivHeader from "./components/DivHeader";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => (
+  <header>
+    <DivHeader />
+    <Logo />
+    <BestPokemon />
+    <CaughtPokemon />
+  </header>
+);
+
 
 export default App;
