@@ -1,8 +1,7 @@
 import React from "react";
 
-const Logo = () => {
-    const appName = "Pokedex";
-    return <div></div>;
+const Logo = (props) => {
+return <h1>{props.appName}</h1>;
 }
 
 export default Logo;
