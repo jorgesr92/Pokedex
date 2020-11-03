@@ -7,10 +7,10 @@ const WelcomeImg = (props) => <img onClick={props.logWhenClicked} alt="" src="ht
 
 const Logo = (props) => {
     return (
-        <div id="headerDiv">
+        <header id="headerDiv">
             <Welcome name = {props.appName}/>
             <WelcomeImg logWhenClicked = {props.handleClick}/>
-        </div>
+        </header>
     )
 };
 
